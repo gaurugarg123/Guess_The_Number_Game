@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Num</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="bg-blue1">
+      <h1>guess a number game</h1>
+      <p>guess a number between 1 to 100</p>
+      <div class="box bg-black">
+        <h2>Enter number between 1 to 100</h2>
+        <input
+          type="text" class="form-control" id="userInput" placeholder="Enter Number Between 1 to 100" />
+        <button
+          type="submit"
+          class="btn btn-primary my-3"
+          id="submitBtn"
+          onclick="submit()"
+        >
+          Submit</button><br><br>
+        <label for="" class="text-white" id="label"></label>
+        <button type="submit" class="btn btn-primary my-3" id="restartBtn" onclick="restartF()">Restart game</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <h3>@Created By Gaurav Garg</h3>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
